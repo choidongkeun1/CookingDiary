@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#FFC107"
+            android:gravity="center"
+            android:text="음        식"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/inputFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="음식 이름을 입력하세요." />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="#FFC107"
+        android:gravity="center"
+        android:text="카테고리"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/korean"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="한식" />
+
+        <CheckBox
+            android:id="@+id/casual"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="분식" />
+
+        <CheckBox
+            android:id="@+id/fast"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="패스트푸드" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/western"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="양식" />
+
+        <CheckBox
+            android:id="@+id/japanese"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="일식" />
+
+        <CheckBox
+            android:id="@+id/chinese"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="중식" />
+
+        <CheckBox
+            android:id="@+id/others"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="기타" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#FFC107"
+            android:gravity="center"
+            android:text="재        료"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/inputIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="재료를 입력하세요." />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="#FFC107"
+        android:gravity="center"
+        android:text="레  시  피"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="레시피를 입력하세요." />
+
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="등록하기" />
+
+</LinearLayout>
